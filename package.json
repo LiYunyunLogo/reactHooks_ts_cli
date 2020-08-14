@@ -1,0 +1,26 @@
+{
+  "name": "reactHooks_ts_cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/LiYunyunLogo/reactHooks_ts_cli.git",
+  "author": "liyunyun <Li950425>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack --mode=development",
+    "build": "webpack --mode=production"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "source-map-loader": "^1.0.1",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "@types/react": "^16.9.46",
+    "@types/react-dom": "^16.9.8",
+    "reacr": "^1.0.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
