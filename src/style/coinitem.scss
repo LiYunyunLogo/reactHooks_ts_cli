@@ -1,0 +1,48 @@
+%coinitem {
+  height: 1.1rem;
+  position: relative;
+  &:last-child {
+    &:after {
+      border-bottom: 0px dashed #e69730;
+    }
+  }
+  > span {
+    position: absolute;
+    > span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    > img {
+      width: 0.38rem;
+      margin-left: 0.1rem;
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: -0.02rem;
+    }
+  }
+  .coin-title {
+    color: $brown;
+    width: 4.5rem;
+    font-size: 0.28rem;
+    @include topleft(0.24rem, 0);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .coin-num {
+    @include numberfont(0.32rem);
+    top: 0.35rem;
+    right: 0;
+    i {
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: -0.02rem;
+      margin-right: -0.05rem;
+    }
+  }
+  .coin-time {
+    font-size: 0.24rem;
+    color: $gray;
+    @include topleft(0.62rem, 0);
+  }
+}

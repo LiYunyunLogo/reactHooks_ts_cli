@@ -1,0 +1,90 @@
+$brown: #914e00;
+$gray: rgba(145, 78, 0, 0.5);
+$orange: #ff8c38;
+$red: #ff4200;
+$deep-yellow: rgba(255, 218, 131, 1);
+$pale-yellow: #fffbcb;
+
+// 背景图片地址和大小
+@mixin brs($url) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+@mixin topleft($top, $left) {
+  position: absolute;
+  top: $top;
+  left: $left;
+}
+@mixin numberfont($size) {
+  font-family: "Montserrat-Bold";
+  font-size: $size;
+  color: $orange;
+}
+@mixin lineheight($size) {
+  line-height: $size;
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+    margin-top: 1px;
+  }
+}
+
+%contain {
+  border-radius: 0.24rem;
+  background-color: $pale-yellow;
+}
+
+%borderlist {
+  border-bottom: 0.02rem dashed #e69730;
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+%alignimg {
+  > span {
+    display: inline-block;
+    margin-left: 0.1rem;
+    vertical-align: middle;
+    // margin-top: -0.01rem;
+  }
+  > img {
+    width: 0.38rem;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+%itemlist {
+  overflow: hidden;
+  @extend %borderlist;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  height: 1.1rem;
+  .left {
+    flex: 1;
+    @extend %alignimg;
+    > img {
+      width: 0.58rem;
+      margin-right: 0.24rem;
+    }
+  }
+  .right {
+    flex: 1;
+    @extend %alignimg;
+    text-align: right;
+    > img {
+      width: 0.3rem;
+    }
+    > span {
+      color: $orange;
+      font-size: 0.32rem;
+      margin-right: 0.15rem;
+    }
+  }
+}

@@ -1,13 +1,33 @@
 {
   "compilerOptions": {
+    "esModuleInterop": true,
     "outDir": "./dist/",
     "sourceMap": true,
     "noImplicitAny": true,
     "module": "commonjs",
-    "target": "es6",
+    "lib": ["es6", "dom"],
+    "target": "es5",
     "jsx": "react"
   },
   "include": [
-    "./src/**/*"
-  ]
+    "./src/**/*",
+    "./index.d.ts" 
+    ],
+  "exclude": [  //排除文件
+    "node_modules",
+    "build",
+    "dist",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts",
+    "*.js"
+  ],
+  "paths": {
+    "src": ["./src"],
+    "@": ["./src"],
+    "images": ["./src/images"],
+    "components": ["./src/components"],
+  }
 }

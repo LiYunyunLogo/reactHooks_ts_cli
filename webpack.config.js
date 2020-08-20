@@ -1,23 +1,17 @@
-module.exports = {
-    entry: "./src/index.tsx",
-    output: {
-        filename: "bundle.js",
-        path: __dirname + "/dist"
-    },
-    devtool: "source-map",
-    resolve: {
-        extensions: [".ts",".tsx",".js",".json"]
-    },
-    module:{
-        rules: [
-            // 'awesome-typescript-loader'
-            {test:/\.tsx?$/,loader:"awesome-typescript-loader"},
-            {enforce:"pre",test:/\.js$/,loader:"source-map-loader"}
-        ]
-    },
-    //
-    externals: {
-        react: "React",
-        ["react-dom"]:"ReactDOM"
-    }
+const path = require("path")
+const merge = require("webpack-merge");
+const preConf = require("./webpackConfig/webpack.pre");
+const devConf = require("./webpackConfig/webpack.dev");
+const proConf = require("./webpackConfig/webpack.pro");
+
+
+//合并webpack配置
+const webpackConf = (env, argv) => {
+  const isPro = argv.mode === 'production'
+  const isDev = argv.ENV === 'dev'
+  if(isDev){
+    return devConf
+  }
+  return  isPro? proConf :preConf
 }
+module.exports = webpackConf

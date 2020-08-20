@@ -1,0 +1,58 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\admin\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add image-webpack-loader
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\admin\AppData\Local\Yarn\bin;C:\Program Files\Eisoo AnyShare;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;F:\Microsoft VS Code\bin;F:\Egret Wing 3\bin;C:\Users\admin\AppData\Roaming\npm;C:\Users\admin\AppData\Local\GitHubDesktop\bin;F:\WebStorm 2020.2\bin;
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  14.6.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile 'C:\Users\admin\AppData\Local\Yarn\Cache\v6\npm-inherits-2.0.1-b17d08d326b4423e568eff719f91b0b1cbdf69f1-integrity\node_modules\inherits\inherits_browser.js' -> 'G:\project\learn\reactHooks_ts_cli\node_modules\assert\node_modules\inherits\inherits_browser.js'
+
+npm manifest: 
+  {
+    "name": "reactHooks_ts_cli",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/LiYunyunLogo/reactHooks_ts_cli.git",
+    "author": "liyunyun <Li950425>",
+    "license": "MIT",
+    "scripts": {
+      "dev": "webpack-dev-server --mode=development --open",
+      "test": "webpack --mode=development",
+      "build": "webpack --mode=production"
+    },
+    "devDependencies": {
+      "awesome-typescript-loader": "^5.2.1",
+      "clean-webpack-plugin": "^3.0.0",
+      "file-loader": "^6.0.0",
+      "html-webpack-plugin": "^4.3.0",
+      "source-map-loader": "^1.0.1",
+      "ts-loader": "^8.0.2",
+      "typescript": "^3.9.7",
+      "url-loader": "^4.1.0",
+      "webpack": "^4.44.1",
+      "webpack-cli": "^3.3.12",
+      "webpack-dev-server": "^3.11.0",
+      "webpack-image-loader": "^0.1.2"
+    },
+    "dependencies": {
+      "@types/react": "^16.9.46",
+      "@types/react-dom": "^16.9.8",
+      "react": "^16.13.1",
+      "react-dom": "^16.13.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
