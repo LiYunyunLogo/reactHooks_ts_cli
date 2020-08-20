@@ -1,5 +1,3 @@
-const path = require("path")
-const merge = require("webpack-merge");
 const preConf = require("./webpackConfig/webpack.pre");
 const devConf = require("./webpackConfig/webpack.dev");
 const proConf = require("./webpackConfig/webpack.pro");

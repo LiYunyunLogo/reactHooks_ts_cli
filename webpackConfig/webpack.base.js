@@ -5,11 +5,10 @@ const path = require("path")
 // CleanWebpackPlugin 每次打包前先清除dist文件夹
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 //多页面配置文件
-const pages =  require("../pages.config")
+const {pages,entrys} =  require("../pages.config")
 const webpack =  require("webpack")
-
 module.exports = {
-    entry: "./src/index.tsx",
+    entry: entrys,
     resolve: {
         extensions: [".ts",".tsx",".js",".css",".json"],
         alias: {

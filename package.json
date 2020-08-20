@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/LiYunyunLogo/reactHooks_ts_cli.git",
-  "author": "liyunyun <Li950425>",
+  "author": "liyunyun",
   "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server --ENV=dev",
